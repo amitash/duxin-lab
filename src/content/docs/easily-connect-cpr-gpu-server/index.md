@@ -2,7 +2,7 @@
 title: How to easily connect to CPR GPU Server
 subtitle: This will allow you to use powerful CPU and GPU cores for all your analysis pipelines.
 updated: 2024-02-09T10:34:01Z
-author: Sampath Amitash Gadi,
+author: Sampath Amitash Gadi
 tags:
     - server
     - alphafold
@@ -11,8 +11,7 @@ tags:
 
 ## Step 1: Download and install Visual Studio Code
 
-- [Download VS Code](https://code.visualstudio.com/).
-- Install it.
+[Download VS Code](https://code.visualstudio.com/) and install it.
 
 ## Step 2: Open VS Code and install the `Remote - SSH` extension
 
@@ -32,7 +31,7 @@ tags:
 
 ## Step 6: Enter host details in the config file
 
-```ssh_config
+```bash
 Host cprgpuserver
     HostName cprgpuhead01fl.unicph.domain
     User zfs274

@@ -16,9 +16,11 @@ const doc = entry.data;
 ---
 
 <Scaffold title={doc.title}>
-  <div class="prose">
+  <div class="prose prose-blue">
+    <div class="font-black text-blue uppercase mb-4">{entry.collection}</div>
     <h1>{doc.title}</h1>
     <p class="lead">{doc.subtitle}</p>
+    <div>By {doc.author}</div>
     <Content />
   </div>
 </Scaffold>
