@@ -1,3 +1,3 @@
 # The Duxin Lab
 
-Documentation
+Documents from the Duxin Lab at KU, Denmark.
