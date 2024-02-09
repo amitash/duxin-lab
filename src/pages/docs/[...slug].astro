@@ -1,0 +1,24 @@
+---
+import { getCollection } from "astro:content";
+import Scaffold from "../../layout/Scaffold.astro";
+
+export async function getStaticPaths() {
+  const docs = await getCollection("docs");
+  return docs.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry }
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+const doc = entry.data;
+---
+
+<Scaffold title={doc.title}>
+  <div class="prose">
+    <h1>{doc.title}</h1>
+    <p class="lead">{doc.subtitle}</p>
+    <Content />
+  </div>
+</Scaffold>
